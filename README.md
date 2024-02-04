@@ -8,4 +8,4 @@
 
 #### Tools and technical guides for kernel developers
 
-- [x] Linux kernel coding style
+- [x] [Linux kernel coding style](linux-kernel-coding-style.md)
