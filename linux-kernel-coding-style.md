@@ -48,8 +48,8 @@
 
 ```c
 while (condition) {
-        if (test)
-                do_something();
+	if (test)
+		do_something();
 }
 ```
 
@@ -139,7 +139,7 @@ while (condition) {
 
 ```c
 __init void * __must_check action(enum magic value, size_t size, u8 count,
-                                  char *fmt, ...) __printf(4, 5) __malloc;
+				  char *fmt, ...) __printf(4, 5) __malloc;
 ```
 
 - The preferred order of elements for a function prototype is:
@@ -166,9 +166,9 @@ __init void * __must_check action(enum magic value, size_t size, u8 count,
 
 ```c
 static __always_inline __init __printf(4, 5) void * __must_check action(
-        enum magic value, u8 count, char *fmt, ...) __malloc
+	enum magic value, u8 count, char *fmt, ...) __malloc
 {
-        ...
+	...
 }
 ```
 
@@ -192,19 +192,19 @@ static __always_inline __init __printf(4, 5) void * __must_check action(
 
 ```c
 err:
-        kfree(foo->bar);
-        kfree(foo);
-        return ret;
+	kfree(foo->bar);
+	kfree(foo);
+	return ret;
 ```
 
 -  The bug in this code is that on some exit paths `foo` is NULL.
 
 ```c
 err_free_bar:
-        kfree(foo->bar);
+	kfree(foo->bar);
 err_free_foo:
-        kfree(foo);
-        return ret;
+	kfree(foo);
+	return ret;
 ```
 
 - Ideally you should simulate errors to test all exit paths.
