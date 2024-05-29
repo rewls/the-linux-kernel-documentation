@@ -105,7 +105,7 @@ while (condition) {
 
     1. Clear integer types, where the abstraction **helps** avoid confusion whether  it is `int` or `long`.
 
-    1. When you usesparse to literally create a **new** type for type-checking.
+    1. When you use sparse to literally create a **new** type for type-checking.
 
     1. New types which are identical to standard C99 types, in certain exceptional circumstances.
 
