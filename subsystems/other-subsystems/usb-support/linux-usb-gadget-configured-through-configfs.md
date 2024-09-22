@@ -42,7 +42,7 @@
     $ cd $CONFIGFS_HOME/usb_gadget/<gadget name>
     ```
 
-- Each gadget needs to have its vendor id <VID> and product id <PID> specified:
+- Each gadget needs to have its vendor id `<VID>` and product id `<PID>` specified:
 
     ```sh
     $ echo <VID> > idVendor
@@ -91,10 +91,10 @@
 - Each gadget will consist of a number of configurations, their corresponding directories must be created:
 
     ```sh
-    $ mkdir configs/<name>/<number>
+    $ mkdir configs/<name>.<number>
     ```
 
-- where <name> can be any string which is legal in a filesystem and the <number> is the configuration's number, e.g.:
+- where `<name>` can be any string which is legal in a filesystem and the `<number>` is the configuration's number, e.g.:
 
     ```sh
     $ mkdir configs/c.1
@@ -132,7 +132,7 @@
     $ mkdir functions/<name>.<instance name>
     ```
 
-- where <name> corresponds to one of allowed function names and instance name is an arbitrary string allowed in a filesystem, e.g.:
+- where `<name>` corresponds to one of allowed function names and instance name is an arbitrary string allowed in a filesystem, e.g.:
 
     ```sh
     $ mkdir functions/ncm.usb0 # usb_f_ncm.ko gets loaded with request_module()
@@ -164,7 +164,7 @@ $ ln -s functions/<name>.<instance name> configs/<name>.<number>
     $ echo <udc name> > UDC
     ```
 
-- where <udc name> is one of those found in /sys/class/udc/*.
+- where `<udc name>` is one of those found in /sys/class/udc/*.
 
 ### 6. Disabling the gadget
 
@@ -180,7 +180,7 @@ $ echo "" > UDC
     $ rm configs/<config name>.<number>/<function>
     ```
 
-- where <config name>.<number> specify the configuration and <function> is a symlink to a function being removed from the configuration.
+- where `<config name>.<number>` specify the configuration and `<function>` is a symlink to a function being removed from the configuration.
 
 - Remove strings directories in configurations:
 
