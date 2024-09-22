@@ -6,12 +6,14 @@
 
 ## Tools and technical guides for kernel developers
 
-- [x] [Linux kernel coding style](linux-kernel-coding-style.md)
+- [Linux kernel coding style](linux-kernel-coding-style.md)
 
-## Policy guides and developer statements
+---
 
-## Dealing with bugs
+- Policy guides and developer statements
 
-## Maintainer information
+- Dealing with bugs
 
-## Other materials
+- Maintainer information
+
+- Other materials

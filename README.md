@@ -4,76 +4,24 @@
 
 ## Working with the development community
 
-- Development process
-
-- Summitting patches
-
-- Code of conduct
-
-- Maintainer handbook
-
 - [All development-process docs](all-development-process-docs)
 
 ## Internal API manuals
 
-- Core API
+- [Subsystems](subsystems)
 
-- Driver APIs
+---
 
-- Subsystems
+- Development tools and processes
 
-- Locking
+- User-oriented documentation
 
-## Development tools and processes
+- Firmware-related documentation
 
-- Licensing rules
+- Architecture-specific documentation
 
-- Writing documentation
-
-- Development tools
-
-- Testing guide
-
-- Hacking guide
-
-- Tracing 
-
-- Fault injection
-
-- Livepatching
-
-- Rust
-
-## User-oriented documentation
-
-- Administration
-
-- Build system
-
-- Reporting issues
-
-- Userspace tools
-
-- Userspace API
-
-## Firmware-related documentation
-
-- Firmware
-
-- Firmware and Devicetree
-
-## Architecture-specific documentation
-
-- CPU architectures
-
-## Other documentation
-
-- Unsorted documentation
-
-## Translations
+- Other documentation
 
 - Translations
 
-## Indices and tables
-
-- Index
+- Indices and tables
